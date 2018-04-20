@@ -1,0 +1,203 @@
+#content .content1 .goodslist{
+	width: 311px;
+	height:552px ;
+	float: left;
+	margin-left:10px ;
+	padding-left: 1px;
+	position: relative;
+}
+#content .content1 .goodslist .img{
+	width: 310px;
+	height: 310px;
+	position: relative;
+}
+#content .content1 .goodslist .img .zoomPup{
+	background: #DEB887;
+	opacity: 0.5;
+	cursor:move;
+}
+#content .content1 .goodslist .zoomWindow{
+	width: 320px;
+	height: 320px;
+	border: 1px solid red;
+	overflow: hidden;
+}
+#content .content1 .goodslist .zoomWrapper{
+	position: relative;
+}
+#content .content1 .goodslist .zoomWrapperTitle{
+	background: #888888;
+	opacity: 0.7;
+	color: white;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+#content .content1 .goodslist ul li{
+	float: left;
+	margin-top: 5px;
+	cursor: pointer;
+}
+#content .content1 .goodslist .ul1{
+	overflow: hidden;
+	height: 100px;
+}
+#content .content1 .goodslist .ul1 li{
+	margin-right: 2px;
+	width: 85px;
+	height: 85px;
+	
+}
+#content .content1 .goodslist .ul1 .hide{
+	display: none;
+}
+#content .content1 .goodslist .ul1 li:hover{
+	border: 1px solid #898989;
+}
+/*#content .content1 .goodslist .ul1 .selected{
+	border: 1px solid #898989;
+}*/
+#content .content1 .goodslist .ul1 li img{
+	width: 85px;
+	height: 85px;
+	
+}
+.goodslist .img{
+	width: 100%;
+	border: 1px solid #898989;
+}
+.goodslist .prompt{
+	display: block;
+	text-align: center;
+}
+.goodslist .tab{
+	    /*clear: both;*/
+    /*float: left;*/
+    height: 230px;
+    overflow: hidden;
+    /*width: 310px;*/
+}
+.goodslist .tab .ul2{
+	overflow: hidden;
+}
+.goodslist .tab .ul2 li{
+	border: 1px solid #898989;
+	padding: 5px;
+	margin-right: 5px;
+	background: lightgoldenrodyellow;
+	border-bottom: none;
+}
+.goodslist .tab div{
+	display: none;
+}
+.goodslist .tab .selected{
+	border: 1px solid #898989;
+	display: block;
+}
+.goodslist .tab .ul2 .selectedli{
+	color: #FFF;
+	background: #336699;
+}
+.goodsinfo{
+	float: left;
+	margin-left: 10px;
+	width: 514px;
+}
+.goodsinfo .box{
+	padding: 0px 10px;
+}
+.goodsinfo .box ul>li{
+	line-height: 25px;
+}
+.goodsinfo .box ul .strong strong{
+	font-size: 25px;
+	color: red;
+	vertical-align: middle;
+}
+.goodsinfo .box ul li strong{
+	padding: 0px 5px;
+}
+.goodsinfo .box ul .li2 strong{
+	text-decoration: line-through;
+}
+.goodsinfo .box .ul1 , .ul2{
+	overflow: hidden;
+}
+.goodsinfo .box .ul1 li{
+	float: left;
+	margin-right:10px ;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+.goodsinfo .box .ul1 .selected{
+	border: 1px solid red;
+}
+.goodsinfo .box .ul1 li img{
+	width: 40px;
+	height: 40px;
+}
+.goodsinfo .box .ul2 li{
+	float: left;
+	width: 36px;
+	height: 36px;
+	text-align: center;
+	line-height: 36px;
+	border: 1px solid #A9A9A9;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.goodsinfo .box .ul2 .cur{
+	background:orangered;
+}
+
+.goodsinfo .cart{
+	margin-top: 20px;
+}
+.rating{
+	overflow:hidden;
+	width:80px;
+	height:16px;
+	margin:0 0 20px 0;
+	padding:0;
+	list-style:none;
+	/*clear:both;*/
+	position:relative;
+	background: url(../img/star-matrix.gif) no-repeat 0 0;
+}
+.nostar {background-position:0 0}
+.onestar {background-position:0 -16px}
+.twostar {background-position:0 -32px}
+.threestar {background-position:0 -48px}
+.fourstar {background-position:0 -64px}
+.fivestar {background-position:0 -80px}
+ul.rating li {
+	cursor: pointer;
+	float:left;
+	text-indent:-999em;
+}
+ul.rating li a {
+	position:absolute;
+	width:16px;
+	height:16px;
+	text-decoration:none;
+	z-index: 200;
+}
+ul.rating li.one a {left:0}
+ul.rating li.two a {left:16px;}
+ul.rating li.three a {left:32px;}
+ul.rating li.four a {left:48px;}
+ul.rating li.five a {left:64px;}
+ul.rating li a:hover {
+	z-index:2;
+	width:80px;
+	height:16px;
+	/*overflow:hidden;*/
+	left:0;	
+	background: url(../img/star-matrix.gif) no-repeat 0 0;
+}
+ul.rating li.one a {background-position:0 -96px;}
+ul.rating li.two a:hover {background-position:0 -112px;}
+ul.rating li.three a:hover {background-position:0 -128px}
+ul.rating li.four a:hover {background-position:0 -144px}
+ul.rating li.five a:hover {background-position:0 -160px}

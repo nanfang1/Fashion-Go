@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="../js/jquery.js"></script>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			.box {
+				margin: 20px auto;
+				height: 50px;
+				width: 300px;
+			}
+			
+			.box .comment {
+				font-size: 30px;
+				color: orange;
+			}
+			
+			.comment li {
+				float: left;
+				cursor: pointer;
+			}
+			
+			ul {
+				list-style: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="box">
+			<ul class="comment">
+				<li>☆</li>
+				<li>☆</li>
+				<li>☆</li>
+				<li>☆</li>
+				<li>☆</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+				var wjx_none = '☆'; // 空心五角星
+				var wjx_sel = '★'; // 实心五角星
+				console.log("afsdf");
+				//鼠标移进变实星
+				$(".comment li").on("mouseover",function() {
+					console.log("sfsdsafsd")
+					$(this).text(wjx_sel).prevAll("li").
+					text(wjx_sel).end().nextAll().text(wjx_none);
+				});
+
+				//鼠标移出变空星
+				$(".comment li").on("mouseout",function() {
+					console.log("s")
+					if($("li.current").length === 0) {
+						$(".comment li").text(wjx_none);
+					} else {
+						$("li.current").text(wjx_sel).prevAll().text(wjx_sel).end().nextAll().text(wjx_none);
+					}
+				});
+
+				//鼠标点击保持当前状态
+				$(".comment li").on("click", function() {
+					console.log("sfsd")
+					$(this).attr("class", "current").siblings().removeClass("current");
+				});
+
+			});
+		</script>
+	</body>
+
+</html>
